@@ -11,18 +11,18 @@
  */
 'use strict';
 
-const AppContainer = require('AppContainer');
-const I18nManager = require('I18nManager');
-const NativeEventEmitter = require('NativeEventEmitter');
-const NativeModules = require('NativeModules');
-const Platform = require('Platform');
-const React = require('React');
+const AppContainer = require('../ReactNative/AppContainer');
+const I18nManager = require('../ReactNative/I18nManager');
+const NativeEventEmitter = require('../EventEmitter/NativeEventEmitter');
+const NativeModules = require('../BatchedBridge/NativeModules');
+const Platform = require('../Utilities/Platform');
+const React = require('../react-native/React');
 const PropTypes = require('prop-types');
-const StyleSheet = require('StyleSheet');
-const View = require('View');
+const StyleSheet = require('../StyleSheet/StyleSheet');
+const View = require('../Components/View/View');
 
-const deprecatedPropType = require('deprecatedPropType');
-const requireNativeComponent = require('requireNativeComponent');
+const deprecatedPropType = require('../Utilities/deprecatedPropType');
+const requireNativeComponent = require('../ReactNative/requireNativeComponent');
 const RCTModalHostView = requireNativeComponent('RCTModalHostView', null);
 const ModalEventEmitter = Platform.OS === 'ios' && NativeModules.ModalManager ?
   new NativeEventEmitter(NativeModules.ModalManager) : null;

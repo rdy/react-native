@@ -11,9 +11,9 @@
  */
 'use strict';
 
-const EventEmitter = require('EventEmitter');
-const EventEmitterWithHolding = require('EventEmitterWithHolding');
-const EventHolder = require('EventHolder');
+const EventEmitter = require('./EventEmitter');
+const EventEmitterWithHolding = require('./EventEmitterWithHolding');
+const EventHolder = require('./EventHolder');
 
 const invariant = require('fbjs/lib/invariant');
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
@@ -124,7 +124,7 @@ const EventEmitterMixin = {
     if (!this.__eventEmitter) {
       let emitter = new EventEmitter();
       if (__DEV__) {
-        const EventValidator = require('EventValidator');
+        const EventValidator = require('./EventValidator');
         emitter = EventValidator.addValidation(emitter, this.__types);
       }
 

@@ -11,12 +11,12 @@
  */
 'use strict';
 
-const BatchedBridge = require('BatchedBridge');
-const EventEmitter = require('EventEmitter');
-const Set = require('Set');
-const TaskQueue = require('TaskQueue');
+const BatchedBridge = require('../BatchedBridge/BatchedBridge');
+const EventEmitter = require('../vendor/emitter/EventEmitter');
+const Set = require('../vendor/core/Set');
+const TaskQueue = require('./TaskQueue');
 
-const infoLog = require('infoLog');
+const infoLog = require('../Utilities/infoLog');
 const invariant = require('fbjs/lib/invariant');
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and

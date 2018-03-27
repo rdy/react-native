@@ -16,9 +16,9 @@ import type {Props as FlatListProps} from 'FlatList';
 import type {renderItemType} from 'VirtualizedList';
 
 const PropTypes = require('prop-types');
-const React = require('React');
-const SwipeableRow = require('SwipeableRow');
-const FlatList = require('FlatList');
+const React = require('../../react-native/React');
+const SwipeableRow = require('./SwipeableRow');
+const FlatList = require('../../Lists/FlatList');
 
 type SwipableListProps = {
   /**

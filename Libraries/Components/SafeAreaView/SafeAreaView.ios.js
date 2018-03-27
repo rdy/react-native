@@ -11,9 +11,9 @@
  * @format
  */
 
-const React = require('React');
-const ViewPropTypes = require('ViewPropTypes');
-const requireNativeComponent = require('requireNativeComponent');
+const React = require('../../react-native/React');
+const ViewPropTypes = require('../View/ViewPropTypes');
+const requireNativeComponent = require('../../ReactNative/requireNativeComponent');
 
 import type {ViewProps} from 'ViewPropTypes';
 
